@@ -5,130 +5,59 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#062b59">
 <title>MIRABAAD MCHJ — Elektron vizitka</title>
-<meta name="description" content="MIRABAAD MCHJ — Khujanyazov Nusratjon elektron vizitkasi">
 <style>
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;min-height:100%;background:#d9e8f5}
-body{font-family:Arial,Helvetica,sans-serif;color:#092f73}
-a{text-decoration:none;color:inherit}
-.page{width:100%;max-width:1024px;margin:0 auto;background:#fff;overflow:hidden;box-shadow:0 18px 55px #062b5930}
-.hero{position:relative;min-height:640px;padding:42px 62px 30px;overflow:hidden;background:linear-gradient(135deg,#fff 0%,#fbfdff 48%,#d9ecff 100%)}
-.hero:before{content:"";position:absolute;left:-210px;top:-180px;width:650px;height:520px;border:58px solid #073a78;border-radius:50%;transform:rotate(-20deg);box-shadow:0 0 0 18px #e9ad32}
-.hero:after{content:"";position:absolute;right:-300px;bottom:-300px;width:820px;height:570px;border:52px solid #0754a8;border-radius:50%;transform:rotate(-15deg);box-shadow:0 0 0 18px #f1b83e}
+*{box-sizing:border-box}html,body{margin:0;background:#dcebf8;font-family:Arial,Helvetica,sans-serif;color:#073477}
+body{padding:0}.page{width:100%;max-width:1024px;margin:auto;background:#fff;overflow:hidden;box-shadow:0 20px 60px #002b5533}
+.hero{position:relative;overflow:hidden;padding:35px 58px 30px;min-height:610px;background:linear-gradient(135deg,#fff 0%,#fff 42%,#e4f3ff 100%)}
+.hero:before{content:"";position:absolute;left:-240px;top:-230px;width:690px;height:600px;border:58px solid #063a78;border-radius:50%;box-shadow:0 0 0 16px #eab139;transform:rotate(-22deg)}
+.hero:after{content:"";position:absolute;right:-350px;bottom:-340px;width:860px;height:650px;border:54px solid #0756aa;border-radius:50%;box-shadow:0 0 0 16px #efb53b;transform:rotate(-18deg)}
 .hero>*{position:relative;z-index:2}
-.brand{display:flex;align-items:center;justify-content:flex-end;gap:14px}
-.logo{width:86px;height:86px;flex:none}
-.logo svg{width:100%;height:100%}
-.company{font-weight:900;font-size:34px;letter-spacing:.2px;color:#082f73}.company small{display:block;text-align:center;font-size:17px;letter-spacing:2px;margin-top:2px}
-.hero h1{font-size:64px;line-height:.98;letter-spacing:-2px;margin:34px 0 14px;max-width:600px}
-.role{font-size:31px;font-weight:800;margin-bottom:18px}
-.role:before{content:"";display:inline-block;width:88px;height:7px;background:#e7a321;border-radius:8px;margin:0 14px 7px 0}
-.location{display:flex;align-items:center;gap:14px;font-size:25px;font-weight:700}
-.pin{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e7a321;color:#fff}
-.pin svg{width:30px;height:30px;fill:currentColor}
-.tags{display:flex;gap:80px;margin-top:28px;font-size:21px;font-weight:800}
-.tag{display:flex;align-items:center;gap:12px}.tag svg{width:42px;height:42px;stroke:#d98a00;fill:none;stroke-width:1.8}
-.contact{position:relative;background:linear-gradient(145deg,#062e60,#031c3b);padding:34px 34px 30px}
-.contact:before{content:"";position:absolute;inset:20px;border:1px solid #dba02c;border-radius:30px;pointer-events:none}
-.contact-title,.contact-sub,.contact-grid{position:relative;z-index:1}
-.contact-title{font-size:34px;font-weight:900;color:#ffd36d;margin-left:34px}
-.contact-sub{font-size:20px;color:#fff;margin:4px 0 22px 34px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
-.qr-panel{border-radius:28px;min-height:610px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:34px 26px;background:linear-gradient(145deg,#061c3a,#062d5c);border:1px solid #dba02c}
-.qr-frame{width:min(82%,430px);aspect-ratio:1/1;background:#fff;border-radius:24px;padding:22px;box-shadow:0 0 0 9px #e6a525}
-.qr-frame img{width:100%;height:100%;display:block;image-rendering:auto}
-.qr-note{color:#fff;font-size:18px;margin-top:26px;text-align:center}
-.links{display:flex;flex-direction:column;gap:15px}
-.btn{min-height:102px;border-radius:23px;display:flex;align-items:center;gap:18px;padding:14px 20px;border:1px solid #ffffff40;box-shadow:0 8px 18px #0002;font-weight:800}
-.ico{width:66px;height:66px;min-width:66px;border-radius:20px;background:#fff;display:grid;place-items:center}
-.ico svg{width:38px;height:38px}
-.btn b{display:block;font-size:23px}.btn span{display:block;font-size:17px;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.call{background:#0869dc;color:#fff}.call .ico{color:#0869dc}
-.email{background:#fff;color:#12377b}.email .ico{color:#df5144}
-.tg{background:#e8f7ff;color:#075ea8}.tg .ico{color:#159ed8}
-.ig{background:linear-gradient(135deg,#ffcb67,#ef3a8c 52%,#7a42c6);color:#fff}.ig .ico{color:#d52b80}
-.map{background:#ecfff1;color:#176b3c}.map .ico{color:#2d8e50}
-.bottom{display:flex;justify-content:center;gap:120px;padding:28px 30px;background:#fff}
-.mini{display:flex;align-items:center;gap:15px;font-size:23px;font-weight:900}.mini svg{width:52px;height:52px;stroke:#d78900;fill:none;stroke-width:1.8}.muted{display:block;font-size:16px;font-weight:600;color:#31568a;margin-top:4px}
-@media(max-width:760px){
- .page{box-shadow:none}
- .hero{min-height:0;padding:25px 24px 24px}
- .hero:before{left:-260px;top:-190px;width:590px;height:450px;border-width:48px}
- .hero:after{right:-330px;bottom:-300px;width:720px;height:520px;border-width:44px}
- .logo{width:58px;height:58px}.company{font-size:23px}.company small{font-size:12px}
- .hero h1{font-size:clamp(38px,9vw,56px);margin-top:25px}
- .role{font-size:clamp(19px,4.7vw,28px)}.role:before{width:58px;height:5px}
- .location{font-size:clamp(15px,3.7vw,22px)}.pin{width:38px;height:38px}.pin svg{width:23px;height:23px}
- .tags{gap:35px;font-size:clamp(14px,3.2vw,19px)}.tag svg{width:31px;height:31px}
- .contact{padding:25px 16px 18px}.contact:before{inset:12px;border-radius:23px}
- .contact-title{font-size:clamp(25px,6vw,32px);margin-left:18px}.contact-sub{font-size:15px;margin-left:18px}
- .contact-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:13px}
- .qr-panel{min-height:0;padding:20px 12px;border-radius:21px}
- .qr-frame{width:90%;padding:12px;border-radius:17px;box-shadow:0 0 0 6px #e6a525}
- .qr-note{font-size:12px;margin-top:16px}
- .links{gap:10px}.btn{min-height:88px;border-radius:18px;padding:10px 10px;gap:10px}
- .ico{width:50px;height:50px;min-width:50px;border-radius:15px}.ico svg{width:29px;height:29px}
- .btn b{font-size:16px}.btn span{font-size:11px;margin-top:3px}
- .bottom{gap:28px;padding:18px 12px}.mini{font-size:15px;gap:9px}.mini svg{width:36px;height:36px}.muted{font-size:11px}
-}
-@media(max-width:430px){
- .hero{padding:20px 17px 19px}
- .brand{gap:9px}.logo{width:48px;height:48px}.company{font-size:19px}
- .hero h1{font-size:32px;letter-spacing:-1px;margin-top:22px}
- .role{font-size:17px}.role:before{width:48px;height:4px;margin-right:10px}
- .location{font-size:14px}.pin{width:34px;height:34px}
- .tags{gap:20px;font-size:13px}.tag{gap:7px}.tag svg{width:27px;height:27px}
- .contact{padding:21px 10px 14px}.contact:before{inset:8px}
- .contact-title{font-size:22px;margin-left:13px}.contact-sub{font-size:13px;margin-left:13px;margin-bottom:15px}
- .contact-grid{gap:9px}
- .qr-panel{padding:14px 8px;border-radius:18px}
- .qr-frame{width:92%;padding:8px;box-shadow:0 0 0 4px #e6a525;border-radius:13px}
- .qr-note{font-size:9px;margin-top:11px}
- .links{gap:7px}.btn{min-height:72px;border-radius:15px;padding:7px 7px;gap:7px}
- .ico{width:40px;height:40px;min-width:40px;border-radius:12px}.ico svg{width:23px;height:23px}
- .btn b{font-size:13px}.btn span{font-size:9px}
- .bottom{gap:12px}.mini{font-size:12px}.mini svg{width:29px;height:29px}.muted{font-size:9px}
-}
+.brand{display:flex;justify-content:flex-end;align-items:center;gap:12px}.brandlogo{width:92px;height:92px}
+.brandname{font-size:36px;font-weight:900}.brandname small{display:block;text-align:center;font-size:17px;letter-spacing:2px;margin-top:3px}
+h1{font-size:65px;line-height:.96;letter-spacing:-2px;margin:30px 0 13px;max-width:600px}.role{font-size:31px;font-weight:800}.role i{display:inline-block;width:88px;height:7px;background:#e5a523;border-radius:8px;margin:0 14px 7px 0}
+.location{display:flex;align-items:center;gap:14px;font-size:25px;font-weight:700;margin-top:17px}.locicon{width:49px;height:49px;border-radius:50%;background:#e8a31e;display:grid;place-items:center;color:#fff}
+.tags{display:flex;gap:82px;margin-top:25px;font-size:21px;font-weight:800}.tag{display:flex;align-items:center;gap:12px}.tag svg{width:42px;height:42px;stroke:#d88900;fill:none;stroke-width:1.8}
+.contact{position:relative;background:linear-gradient(145deg,#082f61,#031d3e);padding:38px 30px 30px}.contact:before{content:"";position:absolute;inset:18px;border:1px solid #dca12d;border-radius:30px}
+.contact h2,.contact>p,.contactgrid{position:relative;z-index:2}.contact h2{margin:0 0 4px 45px;color:#ffd36c;font-size:35px}.contact>p{margin:0 0 24px 45px;color:#fff;font-size:20px}
+.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.qrbox{border:1px solid #dca12d;border-radius:28px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:600px;background:#041e3d}
+.qrframe{width:min(92%,430px);aspect-ratio:1;background:#fff;border-radius:23px;padding:18px;box-shadow:0 0 0 8px #e4a625}.qrframe img{width:100%;height:100%;display:block}.qrnote{color:#fff;font-size:17px;text-align:center;margin-top:24px}
+.links{display:flex;flex-direction:column;gap:14px}.btn{min-height:104px;border-radius:24px;padding:13px 20px;display:flex;align-items:center;gap:18px;border:1px solid #ffffff55;box-shadow:0 7px 18px #0003}.ico{width:66px;height:66px;min-width:66px;border-radius:50%;background:#fff;display:grid;place-items:center}.ico svg{width:38px;height:38px}
+.btn b{font-size:23px;display:block}.btn span{display:block;font-size:17px;margin-top:4px;white-space:nowrap}.call{background:#0870e8;color:#fff}.call .ico{color:#0870e8}.email{background:#fff;color:#0b3678}.email .ico{color:#df5146}.tg{background:#e8f7ff;color:#0765ad}.tg .ico{color:#179ed7}.ig{background:linear-gradient(135deg,#ffc76a,#ed328e 53%,#7b43c8);color:#fff}.ig .ico{color:#d72d83}.map{background:#edfff2;color:#176b3c}.map .ico{color:#2f8e50}
+.bottom{display:flex;justify-content:center;gap:130px;padding:28px;background:#fff}.mini{display:flex;align-items:center;gap:14px;font-size:22px;font-weight:900}.mini svg{width:54px;height:54px;stroke:#d98a00;fill:none;stroke-width:1.8}.mini small{display:block;color:#31578b;font-size:16px;margin-top:3px}
+@media(max-width:760px){.hero{padding:24px 20px;min-height:0}.brandlogo{width:62px;height:62px}.brandname{font-size:25px}.brandname small{font-size:12px}h1{font-size:clamp(37px,9vw,55px);margin-top:24px}.role{font-size:clamp(19px,4.5vw,28px)}.role i{width:58px;height:5px}.location{font-size:clamp(15px,3.6vw,22px)}.locicon{width:39px;height:39px}.tags{gap:35px;font-size:15px}.tag svg{width:31px;height:31px}.contact{padding:25px 14px 18px}.contact:before{inset:10px}.contact h2{font-size:27px;margin-left:20px}.contact>p{font-size:15px;margin-left:20px}.contactgrid{grid-template-columns:1fr 1fr;gap:12px}.qrbox{padding:17px 10px;min-height:0;border-radius:21px}.qrframe{width:92%;padding:10px;box-shadow:0 0 0 5px #e4a625}.qrnote{font-size:11px;margin-top:14px}.links{gap:9px}.btn{min-height:82px;border-radius:17px;padding:8px 9px;gap:9px}.ico{width:48px;height:48px;min-width:48px}.ico svg{width:28px;height:28px}.btn b{font-size:15px}.btn span{font-size:10px}.bottom{gap:30px;padding:18px 10px}.mini{font-size:14px}.mini svg{width:36px;height:36px}.mini small{font-size:10px}}
+@media(max-width:430px){.hero{padding:18px 15px}.brandlogo{width:50px;height:50px}.brandname{font-size:20px}.brandname small{font-size:10px}h1{font-size:31px;letter-spacing:-1px}.role{font-size:16px}.location{font-size:13px}.tags{gap:20px;font-size:12px}.tag svg{width:27px;height:27px}.contact h2{font-size:21px;margin-left:12px}.contact>p{font-size:12px;margin-left:12px}.contactgrid{gap:8px}.qrbox{padding:12px 7px}.qrframe{width:94%;padding:7px;box-shadow:0 0 0 4px #e4a625}.qrnote{font-size:8px}.btn{min-height:69px;border-radius:14px;padding:6px;gap:6px}.ico{width:38px;height:38px;min-width:38px}.ico svg{width:22px;height:22px}.btn b{font-size:12px}.btn span{font-size:8px}.bottom{gap:12px}.mini{font-size:11px}.mini svg{width:28px;height:28px}.mini small{font-size:8px}}
 </style>
 </head>
 <body>
 <main class="page">
 <section class="hero">
 <div class="brand">
-<div class="logo"><svg viewBox="0 0 64 64" aria-label="MIRABAAD logo"><path d="M4 51V13h12l16 17 16-17h12v38H48V28L32 45 16 28v23Z" fill="#0b62bf"/><path d="M16 28 32 45l16-17v23H36L28 43l-12 8Z" fill="#e7a321"/></svg></div>
-<div class="company">MIRABAAD<small>MCHJ</small></div>
+<svg class="brandlogo" viewBox="0 0 100 100"><path d="M8 78V18h18l24 25 24-25h18v60H73V41L50 65 27 41v37Z" fill="#0865c4"/><path d="M27 41 50 65l23-24v37H55l-12-13-16 13Z" fill="#e5a321"/></svg>
+<div class="brandname">MIRABAAD<small>MCHJ</small></div>
 </div>
 <h1>Khujanyazov<br>Nusratjon</h1>
-<div class="role">Ta’sischi va rahbar</div>
-<div class="location"><div class="pin"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></div><span>O‘zbekiston, Toshkent viloyati</span></div>
+<div class="role"><i></i>Ta’sischi va rahbar</div>
+<div class="location"><div class="locicon">●</div><span>O‘zbekiston, Toshkent viloyati</span></div>
 <div class="tags">
 <div class="tag"><svg viewBox="0 0 24 24"><path d="M4 21V9h6v12M14 21V4h6v17M2 21h20M7 12h0M7 16h0M17 8h0M17 12h0M17 16h0"/></svg>Ishlab chiqarish</div>
 <div class="tag"><svg viewBox="0 0 24 24"><path d="M3 11h5l3-3 4 4 3-3 3 2M3 17h18"/></svg>Hamkorlik</div>
 </div>
 </section>
 <section class="contact">
-<div class="contact-title">BIZ BILAN ALOQA</div>
-<div class="contact-sub">QR kodni skaner qiling</div>
-<div class="contact-grid">
-<div class="qr-panel">
-<div class="qr-frame">
-<img src="https://quickchart.io/qr?text=https%3A%2F%2Ferali0485-crypto.github.io%2Fmirabaad-card%2F&size=600&margin=4&ecLevel=H&format=png" alt="Elektron vizitkani ochuvchi QR kod" width="600" height="600">
-</div>
-<div class="qr-note">QR-kod shu elektron vizitkani ochadi</div>
-</div>
+<h2>BIZ BILAN ALOQA</h2><p>QR kodni skaner qiling</p>
+<div class="contactgrid">
+<div class="qrbox"><div class="qrframe"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAewAAAHsAQAAAAA4UaPNAAAC4UlEQVR4nO2dXY7bMAyEh0Xe5Rvs/Y/VG0gnYB8kkZSjbdEmmw3rEYLEP/xgC2CYESUzonigtR+P0ABx4sSJEydOnDhx4sQfaqqqGkR9Ua1AUXtp9VOLmarW1H0nfk38Nj5L7Z8SzmkTBaSozLN3Zqn7Tvya+M22BMOlBVA7AiigTVCqzLPm+d9988SJPwkvKiIAuuYRERRFk43lG948ceL/gDfp0l1E5ICqiohWuLD/0qsTJ/61uGubzeSUSZ122AB2NUvdd+LXxpv0Biz5GTmAovKhckCO1eyJVydO/HX4iPPnIN9Ew3bf1c1vQeq+E78mPvPzFttLSNcXHTLekvbBhvl54jlxTO91Dzf37s5vQ1ff7XNV9HniKfE1zrszz7MVfbfbmCXjPPG0+PReHcsMzLdjctJ/Babsoc8TT4u7thn+bGtsZuSPar9/C8L3InXfiV8T3+j5cbzCw34/OL8Ow5g+TzwlvtHzS2y3NE5I2g+RT58nnhJ3PW9pGYvqMc7bwNaFDX2eeEoci8OHd9ypd8BVDbUN8bT44vPxgREL8tESzM8TT4/v5mErTuPWIGZ8uoo+TzwnHvR89d2xYRNSp5jPOE88MR6cfCdmXMyfViPQ54lnxYO2KZ57Pxnc53Do88TT4nfBvKyivfrk1Enq0OeJ58Rvy94sdABA2yGl9u3+iIgAaAeW2gip+078mvha9wCQUkeJD6t4EB4VWYsePH514sRfjy/zsHE8izA5BXiuZsleUtsQT4uLtQNa0d97fY/h+U3QH48F4A+SvMXNEyf+Vy2OYX0YGxchlHXVAZifJ54a/2RdpS0qs2095+3p88T/J1w+5jKznyIfo4iZP1fSZIqcd7x54sR/226bY00sddOzNwJIqTLrO4lPWqXuO/Fr4ps6Zla1TNuhIRsfC7c+6erEib8e39Sf9xeWSVisZRCo54nnxEX/bPN543+oESdOnDhx4sSJEyf+nfgvo84jqzMoshgAAAAASUVORK5CYII=" alt="MIRABAAD elektron vizitka QR kodi"></div><div class="qrnote">QR-kod shu elektron vizitkani ochadi</div></div>
 <div class="links">
 <a class="btn call" href="tel:+998909060099"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 3.8 9 3l2 4.5-2 1.5a14 14 0 0 0 6 6l1.5-2 4.5 2-.8 2.4c-.3 1-1.3 1.6-2.3 1.5A17.5 17.5 0 0 1 5 6.1c-.1-1 .6-2 1.6-2.3Z"/></svg></div><div><b>Qo‘ng‘iroq</b><span>+998 90 906 00 99</span></div></a>
-<a class="btn email" href="mailto:khujaniyovnusrat@gmail.com"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v14H3zM4 7l8 6 8-6"/></svg></div><div><b>Email</b><span>khujaniyazovnusrat@gmail.com</span></div></a>
-<a class="btn tg" href="https://t.me/Nusratkhujaniyazov" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.7 18.2 20c-.2 1.1-.8 1.4-1.7.9l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.7-7.8c.4-.4-.1-.6-.6-.2L6.1 14.2l-4.6-1.5c-1-.3-1-1 .2-1.5L19.8 3c.9-.3 1.9.2 1.7.7Z"/></svg></div><div><b>Telegram</b><span>@Nusratkhujaniyazov</span></div></a>
-<a class="btn ig" href="https://www.instagram.com/khujaniyazov_nusrat/" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1"/></svg></div><div><b>Instagram</b><span>@khujaniyazov_nusrat</span></div></a>
-<a class="btn map" href="https://www.google.com/maps/search/?api=1&query=41.1494318414385,69.07170106449206" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></div><div><b>Google Maps</b><span>Manzilni ochish</span></div></a>
-</div>
-</div>
+<a class="btn email" href="mailto:khujanyazovnusrat@gmail.com"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v14H3zM4 7l8 6 8-6"/></svg></div><div><b>Email</b><span>khujanyazovnusrat@gmail.com</span></div></a>
+<a class="btn tg" href="https://t.me/Nusratkhujaniyazov" target="_blank"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.7 18.2 20c-.2 1.1-.8 1.4-1.7.9l-4.7-3.5-2.3 2.2-1 .5.3-4.8 8.7-7.8c.4-.4-.1-.6-.6-.2L6.1 14.2l-4.6-1.5c-1-.3-1-1 .2-1.5L19.8 3c.9-.3 1.9.2 1.7.7Z"/></svg></div><div><b>Telegram</b><span>@Nusratkhujaniyazov</span></div></a>
+<a class="btn ig" href="https://www.instagram.com/khujaniyazov_nusrat/" target="_blank"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1"/></svg></div><div><b>Instagram</b><span>@khujaniyazov_nusrat</span></div></a>
+<a class="btn map" href="https://www.google.com/maps/search/?api=1&query=41.1494318414385,69.07170106449206" target="_blank"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></div><div><b>Google Maps</b><span>Manzilni ochish</span></div></a>
+</div></div>
 </section>
 <section class="bottom">
-<div class="mini"><svg viewBox="0 0 24 24"><path d="M3 21V9h6v12M13 21V4h8v17M1 21h22"/></svg><div>Ishlab chiqarish<span class="muted">Sut mahsulotlari</span></div></div>
-<div class="mini"><svg viewBox="0 0 24 24"><path d="M3 12h5l3-3 4 4 3-3 3 2M3 18h18"/></svg><div>Hamkorlik<span class="muted">Yangi loyihalar</span></div></div>
+<div class="mini"><svg viewBox="0 0 24 24"><path d="M3 21V9h6v12M13 21V4h8v17M1 21h22"/></svg><div>Ishlab chiqarish<small>Sut mahsulotlari</small></div></div>
+<div class="mini"><svg viewBox="0 0 24 24"><path d="M3 12h5l3-3 4 4 3-3 3 2M3 18h18"/></svg><div>Hamkorlik<small>Yangi loyihalar</small></div></div>
 </section>
 </main>
-</body>
-</html>
+</body></html>
