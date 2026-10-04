@@ -29,7 +29,7 @@ h1{font-size:60px;line-height:.94;letter-spacing:-2.5px;margin:38px 0 10px;max-w
 .tag{display:flex;align-items:center;gap:10px}
 .tag svg{width:42px;height:42px;stroke:#d88a00;fill:none;stroke-width:1.7}
 .building-wrap{position:absolute;right:34px;top:148px;width:49%;height:335px;border:2px solid #dca42f;border-radius:27px;overflow:hidden;background:#dcecf8;box-shadow:0 18px 38px #0b376b2b;z-index:3}
-.building{width:100%;height:100%;display:block;object-fit:cover;object-position:center center;filter:saturate(1.05) contrast(1.03)}
+.building{width:100%;height:100%;display:block;object-fit:cover;object-position:center center;filter:saturate(1.16) contrast(1.14) brightness(1.03);image-rendering:auto;transform:scale(1.012);transform-origin:center center}
 .building-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.02),rgba(7,59,121,.08));pointer-events:none}
 .contact{position:relative;background:linear-gradient(145deg,#082f62,#031d3d);padding:38px 34px 34px}
 .contact:before{content:"";position:absolute;inset:17px;border:1px solid #dca32e;border-radius:29px;pointer-events:none}
@@ -53,10 +53,6 @@ h1{font-size:60px;line-height:.94;letter-spacing:-2.5px;margin:38px 0 10px;max-w
 .tg{background:#e8f7ff;color:#0967ad}.tg .ico{color:#159bd5}
 .ig{background:linear-gradient(135deg,#ffc66a,#ed3d8e 53%,#7b42c6);color:#fff}.ig .ico{color:#d52d82}
 .map{background:#edfff2;color:#176b3b}.map .ico{color:#2e8c4d}
-.bottom{display:flex;justify-content:center;gap:150px;padding:27px 20px;background:#fff}
-.mini{display:flex;align-items:center;gap:13px;font-size:21px;font-weight:900}
-.mini svg{width:52px;height:52px;stroke:#d98b00;fill:none;stroke-width:1.8}
-.mini small{display:block;font-size:15px;color:#31598c;margin-top:4px}
 @media(max-width:850px){
  .hero{min-height:500px;height:500px;padding:0 22px;position:relative}
  .hero:before{width:560px;height:190px;left:-420px;top:-160px;border-width:30px;box-shadow:0 0 0 7px var(--gold)}
@@ -73,7 +69,6 @@ h1{font-size:60px;line-height:.94;letter-spacing:-2.5px;margin:38px 0 10px;max-w
  .contact{padding:30px 18px 25px}.contact h2{font-size:30px}.contact>p{font-size:17px}
  .contactgrid{grid-template-columns:1fr}.qrbox{min-height:0;padding:24px 15px}.qrframe{width:min(78vw,390px)}
  .links{display:grid;grid-template-columns:1fr 1fr;gap:12px}.btn{min-height:88px;padding:10px 12px;gap:11px}.ico{width:54px;height:54px;min-width:54px}.ico svg{width:30px;height:30px}.btn b{font-size:18px}.btn span{font-size:13px}
- .bottom{gap:55px}
 }
 @media(max-width:540px){
  .hero{min-height:440px;height:440px;padding:0 15px}
@@ -86,7 +81,6 @@ h1{font-size:60px;line-height:.94;letter-spacing:-2.5px;margin:38px 0 10px;max-w
  .contact{padding:27px 12px 20px}.contact:before{inset:10px;border-radius:21px}.contact h2{font-size:24px;margin-left:18px}.contact>p{font-size:14px;margin-left:18px}
  .qrbox{border-radius:20px;padding:19px 10px}.qrframe{width:min(82vw,360px);padding:10px;box-shadow:0 0 0 5px #e5a72b;border-radius:17px}.qrnote{font-size:12px;margin-top:15px}
  .links{grid-template-columns:1fr}.btn{min-height:76px;border-radius:17px}.ico{width:49px;height:49px;min-width:49px}.btn b{font-size:16px}.btn span{font-size:11px}
- .bottom{gap:24px;padding:18px 10px}.mini{font-size:13px;gap:7px}.mini svg{width:34px;height:34px}.mini small{font-size:9px}
 }
 </style>
 </head>
@@ -124,10 +118,6 @@ h1{font-size:60px;line-height:.94;letter-spacing:-2.5px;margin:38px 0 10px;max-w
 <a class="btn map" href="https://www.google.com/maps/search/?api=1&amp;query=41.1494318414385,69.07170106449206" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></div><div><b>Google Maps</b><span>Manzilni ochish</span></div></a>
 </div>
 </div>
-</section>
-<section class="bottom">
-<div class="mini"><svg viewBox="0 0 24 24"><path d="M3 21V9h6v12M13 21V4h8v17M1 21h22"/></svg><div>Ishlab chiqarish<small>Sut mahsulotlari</small></div></div>
-<div class="mini"><svg viewBox="0 0 24 24"><path d="M3 12h5l3-3 4 4 3-3 3 2M3 18h18"/></svg><div>Hamkorlik<small>Yangi loyihalar</small></div></div>
 </section>
 </main>
 </body>
