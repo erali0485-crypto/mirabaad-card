@@ -37,7 +37,7 @@ h1{font-size:62px;line-height:.94;letter-spacing:-2.5px;margin:42px 0 10px;max-w
 .tag{display:flex;align-items:center;gap:10px}
 .tag svg{width:42px;height:42px;stroke:#d88a00;fill:none;stroke-width:1.7}
 .building-wrap{position:absolute;right:28px;top:142px;width:53%;height:355px;border:2px solid #dca42f;border-radius:27px;overflow:hidden;background:#dcecf8;box-shadow:0 18px 38px #0b376b2b;z-index:3}
-.building{width:100%;height:100%;display:block;object-fit:cover;object-position:center center;filter:saturate(1.22) contrast(1.22) brightness(1.04);image-rendering:auto;transform:scale(1.006);transform-origin:center center}
+.building{width:100%;height:100%;display:block;object-fit:cover;object-position:center center;filter:url(#building-sharpen) saturate(1.18) contrast(1.16) brightness(1.04);image-rendering:auto;-webkit-backface-visibility:hidden;backface-visibility:hidden;transform:translateZ(0) scale(1.002);transform-origin:center center}
 .building-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.01),rgba(7,59,121,.03));pointer-events:none}
 .contact{position:relative;background:linear-gradient(145deg,#082f62,#031d3d);padding:38px 34px 34px}
 .contact:before{content:"";position:absolute;inset:17px;border:1px solid #dca32e;border-radius:29px;pointer-events:none}
@@ -90,7 +90,7 @@ h1{font-size:62px;line-height:.94;letter-spacing:-2.5px;margin:42px 0 10px;max-w
  .qrbox{border-radius:20px;padding:19px 10px}.qrframe{width:min(82vw,360px);padding:10px;box-shadow:0 0 0 5px #e5a72b;border-radius:17px}.qrnote{font-size:12px;margin-top:15px}
  .links{grid-template-columns:1fr}.btn{min-height:76px;border-radius:17px}.ico{width:49px;height:49px;min-width:49px}.btn b{font-size:16px}.btn span{font-size:11px}
 }
-</style>
+<style>svg#filters{position:absolute;width:0;height:0;overflow:hidden}<svg id="filters" aria-hidden="true"><defs><filter id="building-sharpen" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur in="SourceGraphic" stdDeviation="0.8" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="arithmetic" k2="2.2" k3="-1.2" result="sharp"/></filter></defs></svg></style>
 </head>
 <body>
 <main class="page">
