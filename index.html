@@ -2,94 +2,88 @@
 <html lang="uz">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b3158">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b2f5b">
 <title>MIRABAAD MCHJ — Elektron vizitka</title>
 <meta name="description" content="MIRABAAD MCHJ — Khujaniyazov Nusratjon elektron vizitkasi">
 <style>
-:root{--navy:#0b3158;--blue:#1269a9;--gold:#d99a2b;--ink:#12263a;--muted:#6d7d8d;--line:#e7edf3}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at top,#eef6fb 0,#dce8f1 42%,#cbd9e4 100%);min-height:100vh}
-a{text-decoration:none;color:inherit}
-.wrap{max-width:560px;margin:auto;padding:18px 14px 34px}
-.card{overflow:hidden;border-radius:30px;background:#fff;box-shadow:0 22px 60px #08233b2b;border:1px solid #ffffffaa}
-.hero{position:relative;padding:28px 24px 25px;color:#fff;background:linear-gradient(135deg,#08294a 0%,#0d4f7e 58%,#1680a2 100%);overflow:hidden}
-.hero:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #ffffff33;border-radius:50%;right:-75px;top:-95px;box-shadow:0 0 0 30px #ffffff0d,0 0 0 60px #ffffff07}
-.brand{position:relative;z-index:1;display:flex;align-items:center;gap:13px}
-.logo{width:58px;height:58px;border-radius:17px;background:linear-gradient(145deg,#fff,#edf4f8);display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:25px;font-weight:900;letter-spacing:-3px;box-shadow:0 8px 22px #001a3030}
-.company{font-size:25px;font-weight:850;letter-spacing:.4px}.company small{display:block;margin-top:4px;font-size:12px;font-weight:600;letter-spacing:1.8px;opacity:.78}
-.hero h1{position:relative;z-index:1;margin:24px 0 5px;font-size:29px;line-height:1.08;letter-spacing:-.5px}
-.role{position:relative;z-index:1;display:inline-flex;align-items:center;gap:7px;margin-top:6px;font-size:14px;font-weight:700;color:#ffd98b}.role:before{content:"";width:25px;height:2px;background:var(--gold);border-radius:3px}
-.body{padding:21px 20px 22px}
-.info{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid var(--line)}
-.info:last-child{border-bottom:0}
-.ico{width:43px;height:43px;min-width:43px;border-radius:14px;background:#f0f6fa;color:var(--navy);display:flex;align-items:center;justify-content:center}
-.ico svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-.label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#7b8996;font-weight:800;margin:1px 0 4px}
-.value{font-size:15px;line-height:1.45;word-break:break-word}
-.link{color:var(--blue);font-weight:700}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:17px}
-.btn{min-height:49px;border-radius:15px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:14px;font-weight:800;border:1px solid transparent;transition:.15s}
-.btn svg{width:20px;height:20px;fill:currentColor}
-.call{background:var(--navy);color:#fff}
-.tg{background:#e8f6ff;color:#1685bc;border-color:#cfeafa}
-.ig{background:linear-gradient(135deg,#fff0f7,#f0e8ff);color:#b02c7a;border-color:#efd6e8}
-.map{background:#eef8f0;color:#2b7b43;border-color:#d9eddd}
-.mail{background:#fff6e8;color:#b36a08;border-color:#f4dfbd}
-.btn:hover{transform:translateY(-1px);box-shadow:0 7px 18px #17324a18}
-.footer{margin-top:17px;padding-top:15px;border-top:1px solid var(--line);text-align:center;color:#84919c;font-size:11px;line-height:1.55}
-.badge{display:inline-block;margin-top:8px;padding:5px 9px;border-radius:999px;background:#f2f6f9;color:#657786;font-weight:700}
-@media(max-width:390px){.actions{grid-template-columns:1fr}.hero h1{font-size:27px}.company{font-size:22px}}
+:root{--navy:#062b59;--blue:#075fc4;--gold:#e7a321;--ink:#092d68;--muted:#64748b}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,Arial,sans-serif}
+body{background:linear-gradient(135deg,#dcecf8,#f7fbff 45%,#dce9f6);color:var(--ink)}
+.wrap{max-width:560px;margin:auto;padding:14px}
+.card{overflow:hidden;border-radius:30px;background:#fff;box-shadow:0 24px 70px #062b5933}
+.hero{position:relative;padding:22px 22px 20px;color:var(--ink);background:linear-gradient(145deg,#fdfefe 0%,#f7fbff 58%,#d9ebfa 100%);overflow:hidden;border-bottom:1px solid #dbe7f1}
+.hero:before{content:"";position:absolute;left:-70px;top:-90px;width:280px;height:230px;border-radius:50%;border:34px solid #0a3977;opacity:.95;transform:rotate(-20deg)}
+.hero:after{content:"";position:absolute;right:-70px;bottom:-130px;width:420px;height:300px;border-radius:50%;border:26px solid #0b5fc2;box-shadow:0 0 0 11px #e7a321;transform:rotate(-18deg)}
+.brand{position:relative;z-index:2;display:flex;align-items:center;gap:12px;margin-left:auto;width:max-content}
+.logo{width:58px;height:58px;display:grid;place-items:center}
+.logo svg{width:58px;height:58px}
+.company{font-weight:900;font-size:23px;letter-spacing:.2px}.company small{display:block;font-size:12px;letter-spacing:1.5px;margin-top:3px}
+.hero h1{position:relative;z-index:2;margin:23px 0 6px;font-size:32px;line-height:1.02;letter-spacing:-.8px;max-width:330px}
+.role{position:relative;z-index:2;font-size:17px;font-weight:800;margin-bottom:8px}.role:before{content:"";display:inline-block;width:58px;height:5px;background:var(--gold);border-radius:5px;margin:0 10px 4px 0}
+.location{position:relative;z-index:2;display:flex;align-items:center;gap:9px;font-size:15px;font-weight:650}
+.pin{width:30px;height:30px;border-radius:50%;background:#f0aa20;color:#fff;display:grid;place-items:center;flex:none}
+.pin svg{width:17px;height:17px;fill:currentColor}
+.tags{position:relative;z-index:2;display:flex;gap:32px;margin-top:17px;font-weight:700;font-size:13px}
+.tag{display:flex;align-items:center;gap:8px}.tag svg{width:25px;height:25px;stroke:#d78900;fill:none;stroke-width:1.8}
+.contact{background:linear-gradient(180deg,#082e5e,#031f43);padding:18px 16px 16px}
+.contact-title{color:#ffd36e;font-size:22px;font-weight:900;margin:2px 0 3px}
+.contact-sub{color:#fff;font-size:13px;margin-bottom:13px}
+.grid{display:grid;grid-template-columns:1fr 1.15fr;gap:12px}
+.qrbox{background:#071e3b;border-radius:22px;padding:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:285px;border:1px solid #d99a2b}
+.qrbox img{width:190px;height:190px;background:#fff;padding:8px;border-radius:14px;display:block}
+.qrnote{color:#fff;text-align:center;font-size:11px;margin-top:8px;line-height:1.3}
+.links{display:flex;flex-direction:column;gap:9px}
+.btn{min-height:54px;border-radius:15px;display:flex;align-items:center;gap:11px;padding:9px 12px;text-decoration:none;font-weight:800;border:1px solid #ffffff33;box-shadow:0 5px 14px #0002}
+.btn .ico{width:36px;height:36px;min-width:36px;border-radius:11px;display:grid;place-items:center;background:#fff}
+.btn svg{width:21px;height:21px}
+.btn b{display:block;font-size:13px}.btn span{display:block;font-size:11px;font-weight:600;margin-top:2px;opacity:.9}
+.call{background:#0b67d8;color:#fff}.call .ico{color:#0b67d8}
+.email{background:#fff;color:#12377b}.email .ico{color:#e34b3c}
+.tg{background:#e8f7ff;color:#0b5ca9}.tg .ico{color:#139ed8}
+.ig{background:linear-gradient(135deg,#ffcf68,#f13c8b 48%,#7c45c8);color:#fff}.ig .ico{color:#d72c83}
+.map{background:#ecfff1;color:#176a39}.map .ico{color:#2b8b4b}
+.bottom{background:#fff;padding:14px 20px;border-top:1px solid #e4ebf2;display:flex;justify-content:center;gap:42px}
+.bottom .mini{display:flex;align-items:center;gap:10px;font-weight:800}.mini svg{width:32px;height:32px;stroke:#d78900;fill:none;stroke-width:1.8}
+.muted{display:block;font-size:11px;font-weight:600;color:#65758a;margin-top:2px}
+@media(max-width:430px){.wrap{padding:0}.card{border-radius:0}.hero{padding:20px 18px 18px}.hero h1{font-size:30px}.grid{grid-template-columns:1fr}.qrbox{min-height:auto}.qrbox img{width:205px;height:205px}.links{display:grid;grid-template-columns:1fr 1fr}.btn{min-height:56px}.btn b{font-size:12px}.bottom{gap:22px}}
 </style>
 </head>
 <body>
 <div class="wrap"><main class="card">
 <section class="hero">
-  <div class="brand">
-    <div class="logo">M</div>
-    <div class="company">MIRABAAD <small>M C H J</small></div>
-  </div>
-  <h1>Khujaniyazov Nusratjon</h1>
-  <div class="role">Ta’sischi va rahbar</div>
+<div class="brand">
+<div class="logo"><svg viewBox="0 0 64 64" aria-label="MIRABAAD logo"><path d="M4 51V13h12l16 17 16-17h12v38H48V28L32 45 16 28v23Z" fill="#0b62bf"/><path d="M16 28 32 45l16-17v23H36L28 43l-12 8Z" fill="#e7a321"/></svg></div>
+<div class="company">MIRABAAD<small>MCHJ</small></div>
+</div>
+<h1>Khujaniyazov Nusratjon</h1>
+<div class="role">Ta’sischi va rahbar</div>
+<div class="location"><div class="pin"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></div>O‘zbekiston, Toshkent viloyati</div>
+<div class="tags">
+<div class="tag"><svg viewBox="0 0 24 24"><path d="M4 21V9h6v12M14 21V4h6v17M2 21h20M7 12h0M7 16h0M17 8h0M17 12h0M17 16h0"/></svg> Ishlab chiqarish</div>
+<div class="tag"><svg viewBox="0 0 24 24"><path d="M3 11h5l3-3 4 4 3-3 3 2M3 17h18"/></svg> Hamkorlik</div>
+</div>
 </section>
-
-<section class="body">
-  <div class="info">
-    <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg></div>
-    <div><div class="label">Manzil</div><div class="value">Toshkent viloyati, Yangiyo‘l tumani, Qo‘shtepa MFY, Tinchlik massivi, Mehnatobod ko‘chasi, 1-tup, 8-uy</div></div>
-  </div>
-
-  <a class="info" href="tel:+998909060099">
-    <div class="ico"><svg viewBox="0 0 24 24"><path d="M6.6 3.8 9 3l2 4.5-2 1.5a14 14 0 0 0 6 6l1.5-2 4.5 2-.8 2.4c-.3 1-1.3 1.6-2.3 1.5A17.5 17.5 0 0 1 5 6.1c-.1-1 .6-2 1.6-2.3Z"/></svg></div>
-    <div><div class="label">Telefon</div><div class="value link">+998 90 906 00 99</div></div>
-  </a>
-
-  <a class="info" href="mailto:khujaniyazovnusrat@gmail.com">
-    <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></div>
-    <div><div class="label">Email</div><div class="value link">khujaniyazovnusrat@gmail.com</div></div>
-  </a>
-
-  <div class="actions">
-    <a class="btn call" href="tel:+998909060099"><svg viewBox="0 0 24 24"><path d="M6.6 3.8 9 3l2 4.5-2 1.5a14 14 0 0 0 6 6l1.5-2 4.5 2-.8 2.4c-.3 1-1.3 1.6-2.3 1.5A17.5 17.5 0 0 1 5 6.1c-.1-1 .6-2 1.6-2.3Z"/></svg>Qo‘ng‘iroq</a>
-
-    <a class="btn tg" href="https://t.me/Nusratkhujaniyazov" target="_blank" rel="noopener" aria-label="Telegram">
-      <svg viewBox="0 0 24 24"><path d="M21.5 3.7 18.2 20c-.2 1.1-.8 1.4-1.7.9l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.7-7.8c.4-.4-.1-.6-.6-.2L6.1 14.2l-4.6-1.5c-1-.3-1-1 .2-1.5L19.8 3c.9-.3 1.9.2 1.7.7Z"/></svg>Telegram</a>
-
-    <a class="btn ig" href="https://www.instagram.com/khujaniyazov_nusrat?stkn=MXE3bjBxZg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1"/></svg>Instagram</a>
-
-    <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=41.1494318414385,69.07170106449206" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>Google Maps</a>
-
-    <a class="btn mail" href="mailto:khujaniyazovnusrat@gmail.com">
-      <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>Email</a>
-  </div>
-
-  <div class="footer">
-    QR-kod va NFC ushbu elektron vizitkaga ulanadi.<br>
-    Telegram, Instagram, telefon, Email va Google Maps tugmalari to‘g‘ridan-to‘g‘ri ishlaydi.
-    <div class="badge">MIRABAAD MCHJ • Elektron vizitka</div>
-  </div>
+<section class="contact">
+<div class="contact-title">BIZ BILAN ALOQA</div>
+<div class="contact-sub">QR kodni skaner qiling</div>
+<div class="grid">
+<div class="qrbox">
+<img alt="MIRABAAD elektron vizitka QR kodi" src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&margin=12&data=https%3A%2F%2Ferali0485-crypto.github.io%2Fmirabaad-card%2F">
+<div class="qrnote">QR-kod shu elektron vizitkani ochadi</div>
+</div>
+<div class="links">
+<a class="btn call" href="tel:+998909060099"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 3.8 9 3l2 4.5-2 1.5a14 14 0 0 0 6 6l1.5-2 4.5 2-.8 2.4c-.3 1-1.3 1.6-2.3 1.5A17.5 17.5 0 0 1 5 6.1c-.1-1 .6-2 1.6-2.3Z"/></svg></div><div><b>Qo‘ng‘iroq</b><span>+998 90 906 00 99</span></div></a>
+<a class="btn email" href="mailto:khujaniyazovnusrat@gmail.com"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18v14H3zM4 7l8 6 8-6"/></svg></div><div><b>Email</b><span>khujaniyazovnusrat@gmail.com</span></div></a>
+<a class="btn tg" href="https://t.me/Nusratkhujaniyazov" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.7 18.2 20c-.2 1.1-.8 1.4-1.7.9l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.7-7.8c.4-.4-.1-.6-.6-.2L6.1 14.2l-4.6-1.5c-1-.3-1-1 .2-1.5L19.8 3c.9-.3 1.9.2 1.7.7Z"/></svg></div><div><b>Telegram</b><span>@Nusratkhujaniyazov</span></div></a>
+<a class="btn ig" href="https://www.instagram.com/khujaniyazov_nusrat?stkn=MXE3bjBxZg%3D%3D&utm_source=qr" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1"/></svg></div><div><b>Instagram</b><span>@khujaniyazov_nusrat</span></div></a>
+<a class="btn map" href="https://www.google.com/maps/search/?api=1&query=41.1494318414385,69.07170106449206" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg></div><div><b>Google Maps</b><span>Manzilni ochish</span></div></a>
+</div>
+</div>
+</section>
+<section class="bottom">
+<div class="mini"><svg viewBox="0 0 24 24"><path d="M3 21V9h6v12M13 21V4h8v17M1 21h22"/></svg><div>Ishlab chiqarish<span class="muted">Sut mahsulotlari</span></div></div>
+<div class="mini"><svg viewBox="0 0 24 24"><path d="M3 12h5l3-3 4 4 3-3 3 2M3 18h18"/></svg><div>Hamkorlik<span class="muted">Yangi loyihalar</span></div></div>
 </section>
 </main></div>
 </body>
