@@ -16,30 +16,11 @@
 html,body{margin:0;padding:0;background:#dcecf8;font-family:Arial,Helvetica,sans-serif;color:var(--blue)}
 body{min-width:320px}
 .page{width:min(100%,1120px);margin:auto;background:#fff;box-shadow:0 18px 70px #062f6826;overflow:hidden}
-.hero{position:relative;width:100%;margin:0!important;background:#fff!important;overflow:hidden;padding:0!important}
-.lang-switch{position:relative;z-index:20;display:flex;justify-content:center;gap:5px;padding:9px;background:#031d43;border-bottom:2px solid #e6a426}
-.lang-switch button{border:0;background:transparent;color:#fff;font-weight:800;font-size:12px;line-height:1;padding:7px 11px;border-radius:7px;cursor:pointer}
+.hero{position:relative;width:100%;margin:0!important;padding:0!important;background:#fff!important;overflow:hidden}
+.hero-card{display:block;width:100%;height:auto;max-width:1536px;margin:0 auto;object-fit:contain;object-position:center}
+.lang-switch{position:absolute;left:18px;top:18px;z-index:20;display:flex;gap:4px;padding:4px;background:rgba(3,29,67,.9);border:1px solid #e6a426;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+.lang-switch button{border:0;background:transparent;color:#fff;font-weight:800;font-size:12px;line-height:1;padding:7px 8px;border-radius:7px;cursor:pointer}
 .lang-switch button:hover{background:rgba(255,255,255,.18)}
-.card-gallery{width:100%;display:flex;flex-direction:column;gap:18px;padding:18px;background:#eef5fb}
-.card-face{display:block;width:100%;height:auto;max-width:1536px;margin:0 auto;border:1px solid #b9c6d3;box-shadow:0 8px 24px rgba(0,31,70,.12);background:#fff}
-.back-card{position:relative;width:100%;max-width:1536px;margin:0 auto;aspect-ratio:1536/965;border:1px solid #b9c6d3;box-shadow:0 8px 24px rgba(0,31,70,.12);overflow:hidden;background:linear-gradient(120deg,#061e49 0%,#082f6e 42%,#fff 42%,#fff 100%)}
-.back-card:before{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 0 35%,rgba(230,164,38,.95) 35.5%,rgba(255,211,106,.98) 38%,transparent 40% 45%,rgba(5,43,100,.98) 45.5%,rgba(10,93,188,.95) 57%,transparent 59%)}
-.back-inner{position:absolute;inset:5%;display:grid;grid-template-columns:42% 58%;gap:3%;align-items:center}
-.back-left{display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;min-width:0}
-.back-title{font-size:clamp(24px,4.1vw,58px);font-weight:800;color:#ffd36a;text-align:center;margin:0 0 8px}
-.back-sub{font-size:clamp(16px,2.4vw,32px);text-align:center;color:#fff;margin:0 0 28px}
-.back-qr{width:min(70%,380px);aspect-ratio:1;background:#fff;border:10px solid #e6a426;border-radius:18px;padding:12px;box-shadow:0 0 0 7px rgba(230,164,38,.25)}
-.back-qr img{width:100%;height:100%;display:block}
-.back-right{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding:2% 4% 2% 2%;color:#082a67}
-.back-logo{font-size:clamp(25px,3.4vw,48px);font-weight:900;text-align:right;margin-bottom:7%}
-.back-logo small{display:block;font-size:.5em;font-weight:800;margin-top:-4px}
-.back-info{display:grid;gap:clamp(18px,3vw,38px)}
-.back-row{display:grid;grid-template-columns:54px 1fr;gap:14px;align-items:start}
-.back-icon{width:54px;height:54px;border-radius:50%;background:#031d43;color:#ffd36a;display:grid;place-items:center;font-size:27px;font-weight:900}
-.back-label{font-weight:800;font-size:clamp(16px,2.1vw,29px);margin-bottom:3px}
-.back-text{font-size:clamp(14px,1.85vw,25px);line-height:1.25}
-body[data-lang="ru"] .card-gallery,body[data-lang="en"] .card-gallery{display:none}
-body[data-lang="ru"] .lang-switch,body[data-lang="en"] .lang-switch{border-bottom-color:#e6a426}
 
 .brand{display:none;position:absolute;right:34px;top:24px;z-index:8;width:270px;height:82px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:0 0 0 18px}
 .brand img{display:block;width:250px;height:74px;object-fit:contain;object-position:center}
@@ -75,37 +56,15 @@ body[data-lang="ru"] .lang-switch,body[data-lang="en"] .lang-switch{border-botto
 .telegram{background:#e8f7ff;color:#087bb8}
 .instagram{background:linear-gradient(135deg,#fff0f6,#f1ddff);color:#8b2fa8}
 .maps{background:#effff3;color:#176b3b}
-@media(max-width:900px){
-.card-gallery{padding:12px;gap:12px}.back-inner{inset:4%}.back-qr{border-width:7px;padding:8px}.back-row{grid-template-columns:40px 1fr;gap:9px}.back-icon{width:40px;height:40px;font-size:20px}
-.contact{padding:32px 20px}.contact-grid{grid-template-columns:1fr}.qr-frame{width:min(76vw,300px);height:min(76vw,300px)}
-}
-@media(max-width:650px){
-.card-gallery{padding:8px;gap:8px}.back-inner{inset:3%}.back-title{font-size:clamp(16px,4.6vw,25px)}.back-sub{font-size:clamp(10px,2.8vw,16px);margin-bottom:10px}.back-qr{width:min(76%,170px);border-width:4px;padding:5px;border-radius:10px}.back-logo{font-size:clamp(14px,4vw,24px);margin-bottom:5%}.back-info{gap:8px}.back-row{grid-template-columns:24px 1fr;gap:5px}.back-icon{width:24px;height:24px;font-size:12px}.back-label{font-size:clamp(9px,2.5vw,15px)}.back-text{font-size:clamp(8px,2.1vw,13px)}
-.contact{padding:27px 12px 22px}.contact:before{inset:10px;border-radius:22px}.heading{font-size:25px;margin-left:18px}.subheading{font-size:14px;margin-left:18px;margin-bottom:20px}
-.contact-grid{gap:17px}.qr-card{padding:19px 11px;border-radius:20px}.qr-frame{width:min(78vw,300px);height:min(78vw,300px);padding:10px;box-shadow:0 0 0 5px #e7a526;border-radius:17px}.qr-note{font-size:12px;margin-top:14px}
-.actions{grid-template-columns:1fr;gap:10px}.action{min-height:74px;border-radius:17px;padding:9px 12px}.icon{width:48px;height:48px;min-width:48px}.icon svg{width:29px;height:29px}.action strong{font-size:16px}.action span{font-size:11px}
-.bottom-strip{grid-template-columns:1fr;gap:10px;min-height:0;padding:15px}.bottom-divider{width:80%;height:1px;margin:auto}.bottom-item{justify-content:flex-start}.bottom-item strong{font-size:16px}.bottom-item span{font-size:13px}
-}
+@media(max-width:900px){.contact{padding:32px 20px}.contact-grid{grid-template-columns:1fr}.qr-frame{width:min(76vw,300px);height:min(76vw,300px)}}
+@media(max-width:650px){.lang-switch{left:8px;top:8px;gap:2px;padding:3px}.lang-switch button{font-size:10px;padding:6px 7px}.contact{padding:27px 12px 22px}.heading{font-size:25px;margin-left:18px}.subheading{font-size:14px;margin-left:18px;margin-bottom:20px}.qr-frame{width:min(78vw,300px);height:min(78vw,300px);padding:10px}.actions{grid-template-columns:1fr;gap:10px}.action{min-height:74px;padding:9px 12px}.icon{width:48px;height:48px;min-width:48px}.icon svg{width:29px;height:29px}.action strong{font-size:16px}.action span{font-size:11px}}
 </style>
 </head>
 <body>
 <main class="page">
 <section class="hero" aria-label="MIRABAAD">
+<img id="heroCard" class="hero-card" src="mirabaad-uz.webp" alt="MIRABAAD — O‘zbekcha vizitka">
 <div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz">O‘Z</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="en">EN</button></div>
-<div class="card-gallery">
-<img class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — O‘zbekcha vizitka, old tomoni">
-<div class="back-card" aria-label="MIRABAAD — O‘zbekcha vizitka, orqa tomoni">
-<div class="back-inner">
-<div class="back-left"><h2 class="back-title">BIZ BILAN ALOQA</h2><p class="back-sub">QR kodni skaner qiling</p><div class="back-qr"><img src="qr.png" alt="MIRABAAD QR kodi"></div></div>
-<div class="back-right">
-<div class="back-logo">MIRABAAD<small>MCHJ</small></div>
-<div class="back-info">
-<div class="back-row"><div class="back-icon">⌖</div><div><div class="back-label">Manzil:</div><div class="back-text">Toshkent viloyati, Yangiyo‘l tumani<br>Qo‘sh tepa MFY, Tinchlik massivi,<br>Mehnatobod ko‘chasi, 1-tup, 8-uy.</div></div></div>
-<div class="back-row"><div class="back-icon">☎</div><div><div class="back-label">Telefon:</div><div class="back-text">+998 90 906 00 99</div></div></div>
-<div class="back-row"><div class="back-icon">✉</div><div><div class="back-label">Email:</div><div class="back-text">khujaniyovnusrat@gmail.com</div></div></div>
-</div></div>
-</div></div>
-</div>
 </section>
 
 <section class="contact">
