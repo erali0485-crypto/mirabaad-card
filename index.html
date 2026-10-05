@@ -18,7 +18,7 @@ body{min-width:320px}
 .page{width:min(100%,1120px);margin:auto;background:#fff;box-shadow:0 18px 70px #062f6826;overflow:hidden}
 .hero{position:relative;width:100%;margin:0!important;padding:0!important;background:#fff!important;overflow:hidden}
 .card-gallery{width:100%;min-height:clamp(190px,42vw,560px);padding:10px 12px 12px;background:#fff;display:flex;justify-content:center;align-items:center;overflow:hidden}
-.card-face{display:block;width:100%;height:auto;max-width:1100px;min-width:0;min-height:160px;margin:0 auto;border:2px solid #b9c6d3;border-radius:4px;box-sizing:border-box;object-fit:contain;object-position:center;background:#fff}
+.card-face{display:block;width:100%;height:auto;max-width:1100px;min-width:0;min-height:160px;margin:0 auto;border:2px solid #b9c6d3;border-radius:4px;box-sizing:border-box;object-fit:contain;object-position:center;background:#fff}\n.ru-role-fix{display:none;position:absolute;left:6.1%;top:52.6%;width:51%;height:8%;background:#fff;z-index:4;align-items:center;padding:0 0 0 .2%;box-sizing:border-box;overflow:hidden}\n.ru-role-fix span{color:#1749c8;font-size:clamp(16px,2.64vw,29px);line-height:1;font-weight:800;white-space:nowrap;letter-spacing:-.4px}\nbody[data-lang="ru"] .ru-role-fix{display:flex}
 
 .lang-switch{position:absolute;left:18px;top:18px;z-index:20;display:flex;gap:4px;padding:4px;background:rgba(3,29,67,.9);border:1px solid #e6a426;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.22)}
 .lang-switch button{border:0;background:transparent;color:#fff;font-weight:800;font-size:12px;line-height:1;padding:7px 8px;border-radius:7px;cursor:pointer}
@@ -59,14 +59,14 @@ body{min-width:320px}
 .instagram{background:linear-gradient(135deg,#fff0f6,#f1ddff);color:#8b2fa8}
 .maps{background:#effff3;color:#176b3b}
 @media(max-width:900px){.contact{padding:32px 20px}.contact-grid{grid-template-columns:1fr}.qr-frame{width:min(76vw,300px);height:min(76vw,300px)}}
-@media(max-width:650px){.card-gallery{padding:6px 6px 8px}.card-face{width:100%;max-width:100%;border-width:1px}.lang-switch{left:8px;top:8px;gap:2px;padding:3px}.lang-switch button{font-size:10px;padding:6px 7px}.contact{padding:27px 12px 22px}.heading{font-size:25px;margin-left:18px}.subheading{font-size:14px;margin-left:18px;margin-bottom:20px}.qr-frame{width:min(78vw,300px);height:min(78vw,300px);padding:10px}.actions{grid-template-columns:1fr;gap:10px}.action{min-height:74px;padding:9px 12px}.icon{width:48px;height:48px;min-width:48px}.icon svg{width:29px;height:29px}.action strong{font-size:16px}.action span{font-size:11px}}
+@media(max-width:650px){.card-gallery{padding:6px 6px 8px}.card-face{width:100%;max-width:100%;border-width:1px}.ru-role-fix{left:6.1%;top:52.5%;width:51%;height:8.5%;}.ru-role-fix span{font-size:clamp(12px,3.9vw,25px)}.lang-switch{left:8px;top:8px;gap:2px;padding:3px}.lang-switch button{font-size:10px;padding:6px 7px}.contact{padding:27px 12px 22px}.heading{font-size:25px;margin-left:18px}.subheading{font-size:14px;margin-left:18px;margin-bottom:20px}.qr-frame{width:min(78vw,300px);height:min(78vw,300px);padding:10px}.actions{grid-template-columns:1fr;gap:10px}.action{min-height:74px;padding:9px 12px}.icon{width:48px;height:48px;min-width:48px}.icon svg{width:29px;height:29px}.action strong{font-size:16px}.action span{font-size:11px}}
 </style>
 </head>
 <body>
 <main class="page">
 <section class="hero" aria-label="MIRABAAD">
 <div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz" onclick="setLang('uz')">O‘Z</button><button type="button" data-lang="ru" onclick="setLang('ru')">RU</button><button type="button" data-lang="en" onclick="setLang('en')">EN</button></div>
-<div class="card-gallery"><img id="heroCard" class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — elektron vizitka"></div>
+<div class="card-gallery"><img id="heroCard" class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — elektron vizitka"><div class="ru-role-fix" aria-hidden="true"><span>Учредитель и Руководитель</span></div></div>
 </section>
 
 <section class="contact">
@@ -87,7 +87,7 @@ body{min-width:320px}
 <script>
 const LANGS={
 uz:{img:"mirabaad-uz.webp",contactTitle:"BIZ BILAN ALOQA",contactSub:"QR kodni skaner qiling",qrNote:"QR-kod shu elektron vizitkani ochadi",call:"Qo‘ng‘iroq",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Manzilni ochish"},
-ru:{img:"mirabaad-ru-20261006.webp?v=20261006",contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
+ru:{img:"mirabaad-ru-20261006.webp",contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
 en:{img:"mirabaad-uz.webp",contactTitle:"CONNECT WITH US",contactSub:"Scan the QR code",qrNote:"The QR code opens this electronic business card",call:"Call",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Open address"}};
 function setLang(lang){
  const d=LANGS[lang]||LANGS.uz;
