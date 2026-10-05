@@ -66,7 +66,7 @@ body{min-width:320px}
 <main class="page">
 <section class="hero" aria-label="MIRABAAD">
 <div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz">O‘Z</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="en">EN</button></div>
-<div class="card-gallery"><img class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — O‘zbekcha vizitka"></div>
+<div class="card-gallery"><img id="heroCard" class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — elektron vizitka"></div>
 </section>
 
 <section class="contact">
@@ -86,13 +86,14 @@ body{min-width:320px}
 </main>
 <script>
 const LANGS={
-uz:{contactTitle:"BIZ BILAN ALOQA",contactSub:"QR kodni skaner qiling",qrNote:"QR-kod shu elektron vizitkani ochadi",call:"Qo‘ng‘iroq",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Manzilni ochish"},
-ru:{contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
+uz:{img:"mirabaad-uz.webp",contactTitle:"BIZ BILAN ALOQA",contactSub:"QR kodni skaner qiling",qrNote:"QR-kod shu elektron vizitkani ochadi",call:"Qo‘ng‘iroq",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Manzilni ochish"},
+ru:{img:"mirabaad-ru.webp",contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
 en:{contactTitle:"CONNECT WITH US",contactSub:"Scan the QR code",qrNote:"The QR code opens this electronic business card",call:"Call",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Open address"}};
 function setLang(lang){
  const d=LANGS[lang]||LANGS.uz;
  document.documentElement.lang=lang;
  document.body.dataset.lang=lang;
+ document.getElementById("heroCard").src=d.img;
  document.querySelectorAll("[data-i18n]").forEach(el=>{if(d[el.dataset.i18n])el.textContent=d[el.dataset.i18n]});
  document.querySelectorAll(".lang-switch button").forEach(b=>{const active=b.dataset.lang===lang;b.style.background=active?"#e6a426":"transparent";b.style.color=active?"#031d43":"#fff"});
  localStorage.setItem("mirabaad-lang",lang);
