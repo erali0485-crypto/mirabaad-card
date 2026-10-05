@@ -16,8 +16,30 @@
 html,body{margin:0;padding:0;background:#dcecf8;font-family:Arial,Helvetica,sans-serif;color:var(--blue)}
 body{min-width:320px}
 .page{width:min(100%,1120px);margin:auto;background:#fff;box-shadow:0 18px 70px #062f6826;overflow:hidden}
-.hero{position:relative;width:100%;height:auto;min-height:0;padding:0!important;margin:0!important;background:#fff!important;overflow:hidden;aspect-ratio:735/435}
-.hero-card{display:block;width:100%;height:100%;object-fit:cover;object-position:center}.hero-copy{display:none;position:absolute;inset:0;z-index:12;pointer-events:none}.hero-copy span{position:absolute;display:block;color:#08205f;background:rgba(255,255,255,.94);border-radius:4px;padding:1px 4px;box-shadow:0 0 8px rgba(255,255,255,.55)}.hero-copy .hc-name{left:9%;top:21%;width:51%;font-size:clamp(28px,6.2vw,54px);line-height:.98;font-weight:800;letter-spacing:-1.5px}.hero-copy .hc-role{left:9%;top:52%;width:50%;font-size:clamp(16px,3.2vw,27px);line-height:1.1;font-weight:800}.hero-copy .hc-location{left:15.5%;top:64%;width:50%;font-size:clamp(13px,2.6vw,21px);line-height:1.15;font-weight:600}.hero-copy .hc-prod{left:7%;top:85.5%;font-size:clamp(12px,2.3vw,19px);font-weight:700}.hero-copy .hc-partner{left:34%;top:85.5%;font-size:clamp(12px,2.3vw,19px);font-weight:700}body[data-lang="ru"] .hero-copy,body[data-lang="en"] .hero-copy{display:block}.lang-switch{position:absolute;left:5.8%;top:7.5%;z-index:20;display:flex;gap:4px;padding:4px;background:rgba(3,29,67,.88);border:1px solid #e6a426;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.22)}.lang-switch button{border:0;background:transparent;color:#fff;font-weight:800;font-size:12px;line-height:1;padding:7px 8px;border-radius:7px;cursor:pointer}.lang-switch button:first-child{background:#e6a426;color:#031d43}.lang-switch button:hover{background:rgba(255,255,255,.18)}
+.hero{position:relative;width:100%;margin:0!important;background:#fff!important;overflow:hidden;padding:0!important}
+.lang-switch{position:relative;z-index:20;display:flex;justify-content:center;gap:5px;padding:9px;background:#031d43;border-bottom:2px solid #e6a426}
+.lang-switch button{border:0;background:transparent;color:#fff;font-weight:800;font-size:12px;line-height:1;padding:7px 11px;border-radius:7px;cursor:pointer}
+.lang-switch button:hover{background:rgba(255,255,255,.18)}
+.card-gallery{width:100%;display:flex;flex-direction:column;gap:18px;padding:18px;background:#eef5fb}
+.card-face{display:block;width:100%;height:auto;max-width:1536px;margin:0 auto;border:1px solid #b9c6d3;box-shadow:0 8px 24px rgba(0,31,70,.12);background:#fff}
+.back-card{position:relative;width:100%;max-width:1536px;margin:0 auto;aspect-ratio:1536/965;border:1px solid #b9c6d3;box-shadow:0 8px 24px rgba(0,31,70,.12);overflow:hidden;background:linear-gradient(120deg,#061e49 0%,#082f6e 42%,#fff 42%,#fff 100%)}
+.back-card:before{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 0 35%,rgba(230,164,38,.95) 35.5%,rgba(255,211,106,.98) 38%,transparent 40% 45%,rgba(5,43,100,.98) 45.5%,rgba(10,93,188,.95) 57%,transparent 59%)}
+.back-inner{position:absolute;inset:5%;display:grid;grid-template-columns:42% 58%;gap:3%;align-items:center}
+.back-left{display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;min-width:0}
+.back-title{font-size:clamp(24px,4.1vw,58px);font-weight:800;color:#ffd36a;text-align:center;margin:0 0 8px}
+.back-sub{font-size:clamp(16px,2.4vw,32px);text-align:center;color:#fff;margin:0 0 28px}
+.back-qr{width:min(70%,380px);aspect-ratio:1;background:#fff;border:10px solid #e6a426;border-radius:18px;padding:12px;box-shadow:0 0 0 7px rgba(230,164,38,.25)}
+.back-qr img{width:100%;height:100%;display:block}
+.back-right{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding:2% 4% 2% 2%;color:#082a67}
+.back-logo{font-size:clamp(25px,3.4vw,48px);font-weight:900;text-align:right;margin-bottom:7%}
+.back-logo small{display:block;font-size:.5em;font-weight:800;margin-top:-4px}
+.back-info{display:grid;gap:clamp(18px,3vw,38px)}
+.back-row{display:grid;grid-template-columns:54px 1fr;gap:14px;align-items:start}
+.back-icon{width:54px;height:54px;border-radius:50%;background:#031d43;color:#ffd36a;display:grid;place-items:center;font-size:27px;font-weight:900}
+.back-label{font-weight:800;font-size:clamp(16px,2.1vw,29px);margin-bottom:3px}
+.back-text{font-size:clamp(14px,1.85vw,25px);line-height:1.25}
+body[data-lang="ru"] .card-gallery,body[data-lang="en"] .card-gallery{display:none}
+body[data-lang="ru"] .lang-switch,body[data-lang="en"] .lang-switch{border-bottom-color:#e6a426}
 
 .brand{display:none;position:absolute;right:34px;top:24px;z-index:8;width:270px;height:82px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:0 0 0 18px}
 .brand img{display:block;width:250px;height:74px;object-fit:contain;object-position:center}
@@ -54,17 +76,11 @@ body{min-width:320px}
 .instagram{background:linear-gradient(135deg,#fff0f6,#f1ddff);color:#8b2fa8}
 .maps{background:#effff3;color:#176b3b}
 @media(max-width:900px){
-.hero{height:auto;min-height:0;padding:0!important;aspect-ratio:735/435}
-.brand{right:20px;top:18px;width:220px;height:68px}.brand img{width:205px;height:62px}
-.identity{width:52%;padding-top:100px}.name{font-size:54px}.role{font-size:23px}.location{font-size:18px}.services{gap:28px}.service{font-size:17px}
-.building{right:25px;top:190px;width:47%;height:300px}
+.card-gallery{padding:12px;gap:12px}.back-inner{inset:4%}.back-qr{border-width:7px;padding:8px}.back-row{grid-template-columns:40px 1fr;gap:9px}.back-icon{width:40px;height:40px;font-size:20px}
 .contact{padding:32px 20px}.contact-grid{grid-template-columns:1fr}.qr-frame{width:min(76vw,300px);height:min(76vw,300px)}
 }
 @media(max-width:650px){
-.hero{height:auto;min-height:0;padding:0!important;aspect-ratio:1000/630}.lang-switch{left:4%;top:5%;gap:3px;padding:3px}.lang-switch button{font-size:10px;padding:6px 7px}.brand{position:relative;right:auto;top:auto;margin-left:auto;width:155px;height:54px;border-radius:0 0 0 14px}.brand img{width:145px;height:50px}
-.identity{width:100%;padding-top:34px}.name{font-size:41px;letter-spacing:-2px}.name-line{width:100px;height:5px;margin-top:14px}.role{font-size:19px;margin-top:13px}.location{font-size:14px;gap:9px;margin-top:19px;white-space:normal}.pin{width:32px;height:40px;flex-basis:32px}
-.services{gap:25px;margin-top:25px}.service{font-size:14px;gap:7px}.service-icon,.service-icon svg{width:34px;height:34px}
-.building{position:relative;right:auto;top:auto;width:100%;height:230px;margin-top:26px;border-radius:22px}
+.card-gallery{padding:8px;gap:8px}.back-inner{inset:3%}.back-title{font-size:clamp(16px,4.6vw,25px)}.back-sub{font-size:clamp(10px,2.8vw,16px);margin-bottom:10px}.back-qr{width:min(76%,170px);border-width:4px;padding:5px;border-radius:10px}.back-logo{font-size:clamp(14px,4vw,24px);margin-bottom:5%}.back-info{gap:8px}.back-row{grid-template-columns:24px 1fr;gap:5px}.back-icon{width:24px;height:24px;font-size:12px}.back-label{font-size:clamp(9px,2.5vw,15px)}.back-text{font-size:clamp(8px,2.1vw,13px)}
 .contact{padding:27px 12px 22px}.contact:before{inset:10px;border-radius:22px}.heading{font-size:25px;margin-left:18px}.subheading{font-size:14px;margin-left:18px;margin-bottom:20px}
 .contact-grid{gap:17px}.qr-card{padding:19px 11px;border-radius:20px}.qr-frame{width:min(78vw,300px);height:min(78vw,300px);padding:10px;box-shadow:0 0 0 5px #e7a526;border-radius:17px}.qr-note{font-size:12px;margin-top:14px}
 .actions{grid-template-columns:1fr;gap:10px}.action{min-height:74px;border-radius:17px;padding:9px 12px}.icon{width:48px;height:48px;min-width:48px}.icon svg{width:29px;height:29px}.action strong{font-size:16px}.action span{font-size:11px}
@@ -74,7 +90,23 @@ body{min-width:320px}
 </head>
 <body>
 <main class="page">
-<section class="hero" aria-label="MIRABAAD"><img id="heroCard" class="hero-card" src="mirabaad-uz.webp" alt="MIRABAAD"><div id="heroCopy" class="hero-copy" aria-hidden="true"><span class="hc-name"></span><span class="hc-role"></span><span class="hc-location"></span><span class="hc-prod"></span><span class="hc-partner"></span></div><div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz">O‘Z</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="en">EN</button></div></section>
+<section class="hero" aria-label="MIRABAAD">
+<div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz">O‘Z</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="en">EN</button></div>
+<div class="card-gallery">
+<img class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — O‘zbekcha vizitka, old tomoni">
+<div class="back-card" aria-label="MIRABAAD — O‘zbekcha vizitka, orqa tomoni">
+<div class="back-inner">
+<div class="back-left"><h2 class="back-title">BIZ BILAN ALOQA</h2><p class="back-sub">QR kodni skaner qiling</p><div class="back-qr"><img src="qr.png" alt="MIRABAAD QR kodi"></div></div>
+<div class="back-right">
+<div class="back-logo">MIRABAAD<small>MCHJ</small></div>
+<div class="back-info">
+<div class="back-row"><div class="back-icon">⌖</div><div><div class="back-label">Manzil:</div><div class="back-text">Toshkent viloyati, Yangiyo‘l tumani<br>Qo‘sh tepa MFY, Tinchlik massivi,<br>Mehnatobod ko‘chasi, 1-tup, 8-uy.</div></div></div>
+<div class="back-row"><div class="back-icon">☎</div><div><div class="back-label">Telefon:</div><div class="back-text">+998 90 906 00 99</div></div></div>
+<div class="back-row"><div class="back-icon">✉</div><div><div class="back-label">Email:</div><div class="back-text">khujaniyovnusrat@gmail.com</div></div></div>
+</div></div>
+</div></div>
+</div>
+</section>
 
 <section class="contact">
 <h2 class="heading" data-i18n="contactTitle">BIZ BILAN ALOQA</h2>
@@ -93,20 +125,13 @@ body{min-width:320px}
 </main>
 <script>
 const LANGS={
-uz:{img:"mirabaad-uz.webp",contactTitle:"BIZ BILAN ALOQA",contactSub:"QR kodni skaner qiling",qrNote:"QR-kod shu elektron vizitkani ochadi",call:"Qo‘ng‘iroq",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Manzilni ochish"},
-ru:{img:"mirabaad-uz.webp",contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
-en:{img:"mirabaad-uz.webp",contactTitle:"CONNECT WITH US",contactSub:"Scan the QR code",qrNote:"The QR code opens this electronic business card",call:"Call",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Open address"}};
+uz:{contactTitle:"BIZ BILAN ALOQA",contactSub:"QR kodni skaner qiling",qrNote:"QR-kod shu elektron vizitkani ochadi",call:"Qo‘ng‘iroq",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Manzilni ochish"},
+ru:{contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
+en:{contactTitle:"CONNECT WITH US",contactSub:"Scan the QR code",qrNote:"The QR code opens this electronic business card",call:"Call",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Open address"}};
 function setLang(lang){
  const d=LANGS[lang]||LANGS.uz;
  document.documentElement.lang=lang;
  document.body.dataset.lang=lang;
- document.getElementById("heroCard").src=d.img;
- const hc=document.getElementById("heroCopy");
- hc.querySelector(".hc-name").innerHTML=lang==="ru"?"Кхужаниязов<br>Нусратжон":lang==="en"?"Khujaniyazov<br>Nusratjon":"";
- hc.querySelector(".hc-role").textContent=lang==="ru"?"Учредитель и руководитель":lang==="en"?"Founder & Business Development":"";
- hc.querySelector(".hc-location").textContent=lang==="ru"?"Узбекистан, Ташкентская область":lang==="en"?"Uzbekistan, Tashkent Region":"";
- hc.querySelector(".hc-prod").textContent=lang==="ru"?"Производство":lang==="en"?"Dairy Production":"";
- hc.querySelector(".hc-partner").textContent=lang==="ru"?"Партнёрство":lang==="en"?"Partnership":"";
  document.querySelectorAll("[data-i18n]").forEach(el=>{if(d[el.dataset.i18n])el.textContent=d[el.dataset.i18n]});
  document.querySelectorAll(".lang-switch button").forEach(b=>{const active=b.dataset.lang===lang;b.style.background=active?"#e6a426":"transparent";b.style.color=active?"#031d43":"#fff"});
  localStorage.setItem("mirabaad-lang",lang);
