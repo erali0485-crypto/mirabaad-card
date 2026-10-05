@@ -95,7 +95,7 @@ function setLang(lang){
  document.body.dataset.lang=lang;
  const hero=document.getElementById("heroCard");
  hero.onerror=()=>{hero.onerror=null;hero.src="mirabaad-uz.webp";const ro=document.getElementById("ruOverlay");if(ro)ro.style.display="none"};
- hero.src=d.img||"mirabaad-uz.webp"; const ro=document.getElementById("ruOverlay"); if(ro) ro.style.display=lang==="ru"?"block":"none";
+ hero.src=d.img||"mirabaad-uz.webp"; const ro=document.getElementById("ruOverlay"); if(ro) ro.style.display="none";
  document.querySelectorAll("[data-i18n]").forEach(el=>{if(d[el.dataset.i18n])el.textContent=d[el.dataset.i18n]});
  document.querySelectorAll(".lang-switch button").forEach(b=>{const active=b.dataset.lang===lang;b.style.background=active?"#e6a426":"transparent";b.style.color=active?"#031d43":"#fff"});
  localStorage.setItem("mirabaad-lang",lang);
