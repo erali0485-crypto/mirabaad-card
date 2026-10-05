@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 967" width="1536" height="967">
   <image href="mirabaad-ru-20261006.webp" x="0" y="0" width="1536" height="967" preserveAspectRatio="none"/>
-  <rect x="78" y="500" width="770" height="88" fill="#ffffff"/>
+  <!-- Exact Russian-language name and title from the supplied reference image -->
+  <rect x="72" y="190" width="820" height="280" fill="#ffffff"/>
+  <text x="91" y="319" font-family="Arial, Helvetica, sans-serif" font-size="94" font-weight="800" letter-spacing="-2" fill="#111d5d">Хужаниязов</text>
+  <text x="91" y="431" font-family="Arial, Helvetica, sans-serif" font-size="94" font-weight="800" letter-spacing="-2" fill="#111d5d">Нусратжон</text>
+  <rect x="96" y="468" width="280" height="25" rx="13" fill="#f3b51b"/>
+  <rect x="72" y="505" width="820" height="82" fill="#ffffff"/>
   <text x="96" y="563" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#1749c8">Учредитель и Руководитель</text>
 </svg>
