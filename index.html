@@ -65,7 +65,7 @@ body{min-width:320px}
 <body>
 <main class="page">
 <section class="hero" aria-label="MIRABAAD">
-<div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz">O‘Z</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="en">EN</button></div>
+<div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz" onclick="setLang('uz')">O‘Z</button><button type="button" data-lang="ru" onclick="setLang('ru')">RU</button><button type="button" data-lang="en" onclick="setLang('en')">EN</button></div>
 <div class="card-gallery"><img id="heroCard" class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — elektron vizitka"></div>
 </section>
 
@@ -100,7 +100,7 @@ function setLang(lang){
  document.querySelectorAll(".lang-switch button").forEach(b=>{const active=b.dataset.lang===lang;b.style.background=active?"#e6a426":"transparent";b.style.color=active?"#031d43":"#fff"});
  localStorage.setItem("mirabaad-lang",lang);
 }
-document.querySelectorAll(".lang-switch button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+
 setLang(localStorage.getItem("mirabaad-lang")||"uz");
 </script></body>
 </html>
