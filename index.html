@@ -16,8 +16,8 @@
 html,body{margin:0;padding:0;background:#dcecf8;font-family:Arial,Helvetica,sans-serif;color:var(--blue)}
 body{min-width:320px}
 .page{width:min(100%,1120px);margin:auto;background:#fff;box-shadow:0 18px 70px #062f6826;overflow:hidden}
-.hero{position:relative;width:100%;height:auto;min-height:0;padding:0!important;margin:0!important;background:#fff!important;overflow:hidden;aspect-ratio:1536/920}
-.hero-card{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero{position:relative;width:100%;height:auto;min-height:0;padding:0!important;margin:0!important;background:#fff!important;overflow:hidden;aspect-ratio:1612/975}
+.hero-card{display:block;width:100%;height:100%;object-fit:fill;object-position:center}.lang-switch{position:absolute;left:5.8%;top:7.5%;z-index:20;display:flex;gap:4px;padding:4px;background:rgba(3,29,67,.88);border:1px solid #e6a426;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.22)}.lang-switch button{border:0;background:transparent;color:#fff;font-weight:800;font-size:12px;line-height:1;padding:7px 8px;border-radius:7px;cursor:pointer}.lang-switch button:first-child{background:#e6a426;color:#031d43}.lang-switch button:hover{background:rgba(255,255,255,.18)}
 
 .brand{display:none;position:absolute;right:34px;top:24px;z-index:8;width:270px;height:82px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:0 0 0 18px}
 .brand img{display:block;width:250px;height:74px;object-fit:contain;object-position:center}
@@ -54,14 +54,14 @@ body{min-width:320px}
 .instagram{background:linear-gradient(135deg,#fff0f6,#f1ddff);color:#8b2fa8}
 .maps{background:#effff3;color:#176b3b}
 @media(max-width:900px){
-.hero{height:auto;min-height:0;padding:0!important;aspect-ratio:1536/920}
+.hero{height:auto;min-height:0;padding:0!important;aspect-ratio:1612/975}
 .brand{right:20px;top:18px;width:220px;height:68px}.brand img{width:205px;height:62px}
 .identity{width:52%;padding-top:100px}.name{font-size:54px}.role{font-size:23px}.location{font-size:18px}.services{gap:28px}.service{font-size:17px}
 .building{right:25px;top:190px;width:47%;height:300px}
 .contact{padding:32px 20px}.contact-grid{grid-template-columns:1fr}.qr-frame{width:min(76vw,300px);height:min(76vw,300px)}
 }
 @media(max-width:650px){
-.hero{height:auto;min-height:0;padding:0!important;aspect-ratio:1536/920}.brand{position:relative;right:auto;top:auto;margin-left:auto;width:155px;height:54px;border-radius:0 0 0 14px}.brand img{width:145px;height:50px}
+.hero{height:auto;min-height:0;padding:0!important;aspect-ratio:1612/975}.lang-switch{left:4%;top:5%;gap:3px;padding:3px}.lang-switch button{font-size:10px;padding:6px 7px}.brand{position:relative;right:auto;top:auto;margin-left:auto;width:155px;height:54px;border-radius:0 0 0 14px}.brand img{width:145px;height:50px}
 .identity{width:100%;padding-top:34px}.name{font-size:41px;letter-spacing:-2px}.name-line{width:100px;height:5px;margin-top:14px}.role{font-size:19px;margin-top:13px}.location{font-size:14px;gap:9px;margin-top:19px;white-space:normal}.pin{width:32px;height:40px;flex-basis:32px}
 .services{gap:25px;margin-top:25px}.service{font-size:14px;gap:7px}.service-icon,.service-icon svg{width:34px;height:34px}
 .building{position:relative;right:auto;top:auto;width:100%;height:230px;margin-top:26px;border-radius:22px}
@@ -74,7 +74,7 @@ body{min-width:320px}
 </head>
 <body>
 <main class="page">
-<section class="hero" aria-label="MIRABAAD yuqori qism"><img class="hero-card" src="mirabaad-top.webp" alt="MIRABAAD MCHJ"></section>
+<section class="hero" aria-label="MIRABAAD yuqori qism"><img class="hero-card" src="mirabaad-top.webp" alt="MIRABAAD MCHJ"><div class="lang-switch" aria-label="Til tanlash"><button type="button" title="O‘zbek tili">O‘Z</button><button type="button" title="Русский">RU</button><button type="button" title="English">EN</button></div></section>
 
 <section class="contact">
 <h2 class="heading">BIZ BILAN ALOQA</h2>
