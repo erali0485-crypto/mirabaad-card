@@ -78,7 +78,7 @@ body{min-width:320px}
 <main class="page">
 <section class="hero" aria-label="MIRABAAD">
 <div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz" onclick="setLang('uz')">O‘Z</button><button type="button" data-lang="ru" onclick="setLang('ru')">RU</button><button type="button" data-lang="en" onclick="setLang('en')">EN</button></div>
-<div class="card-gallery"><img id="heroCard" class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — elektron vizitka">><div id="enOverlay" class="en-overlay" aria-hidden="true"><div class="en-name-bg"></div><p class="en-name">Khujaniyazov</p><p class="en-name n2">Nusratjon</p><div class="en-bar"></div><div class="en-role-bg"></div><p class="en-role">Founder &amp; Chief Executive Officer</p><div class="en-location-bg"></div><p class="en-location">Uzbekistan, Tashkent Region<br>Yangiyol District</p><div class="en-services-bg"></div><p class="en-man">Manufacturing</p><p class="en-part">Partnership</p></div>
+<div class="card-gallery"><img id="heroCard" class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — elektron vizitka"><div id="enOverlay" class="en-overlay" aria-hidden="true"><div class="en-name-bg"></div><p class="en-name">Khujaniyazov</p><p class="en-name n2">Nusratjon</p><div class="en-bar"></div><div class="en-role-bg"></div><p class="en-role">Founder &amp; Chief Executive Officer</p><div class="en-location-bg"></div><p class="en-location">Uzbekistan, Tashkent Region<br>Yangiyol District</p><div class="en-services-bg"></div><p class="en-man">Manufacturing</p><p class="en-part">Partnership</p></div>
 </section>
 
 <section class="contact">
@@ -100,14 +100,14 @@ body{min-width:320px}
 const LANGS={
 uz:{img:"mirabaad-uz.webp",contactTitle:"BIZ BILAN ALOQA",contactSub:"QR kodni skaner qiling",qrNote:"QR-kod shu elektron vizitkani ochadi",call:"Qo‘ng‘iroq",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Manzilni ochish"},
 ru:{img:"mirabaad-ru-exact.jpg?ru=6",contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
-en:{img:"mirabaad-en.webp?en=1",contactTitle:"CONNECT WITH US",contactSub:"Scan the QR code",qrNote:"The QR code opens this electronic business card",call:"Call",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Open address"}};
+en:{img:"mirabaad-en.webp?en=2",contactTitle:"CONNECT WITH US",contactSub:"Scan the QR code",qrNote:"The QR code opens this electronic business card",call:"Call",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Open address"}};
 function setLang(lang){
  const d=LANGS[lang]||LANGS.uz;
  document.documentElement.lang=lang;
  document.body.dataset.lang=lang;
  const hero=document.getElementById("heroCard");
  hero.onerror=()=>{hero.onerror=null;hero.src="mirabaad-uz.webp";const ro=document.getElementById("ruOverlay");if(ro)ro.style.display="none"};
- hero.src=d.img||"mirabaad-uz.webp"; const ro=document.getElementById("ruOverlay"); if(ro) ro.style.display=lang==="ru"?"block":"none"; const eo=document.getElementById("enOverlay"); if(eo) eo.style.display=lang==="en"?"block":"none";
+ hero.src=d.img||"mirabaad-uz.webp"; const ro=document.getElementById("ruOverlay"); if(ro) ro.style.display=lang==="ru"?"block":"none"; const eo=document.getElementById("enOverlay"); if(eo) eo.style.display="none";
  document.querySelectorAll("[data-i18n]").forEach(el=>{if(d[el.dataset.i18n])el.textContent=d[el.dataset.i18n]});
  document.querySelectorAll(".lang-switch button").forEach(b=>{const active=b.dataset.lang===lang;b.style.background=active?"#e6a426":"transparent";b.style.color=active?"#031d43":"#fff"});
  localStorage.setItem("mirabaad-lang",lang);
