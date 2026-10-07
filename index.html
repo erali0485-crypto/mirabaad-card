@@ -32,7 +32,7 @@ body{min-width:320px}
 .card-gallery{width:100%;min-height:clamp(190px,42vw,560px);padding:10px 12px 12px;background:#fff;display:flex;justify-content:center;align-items:center;overflow:hidden}
 .card-face{display:block;width:100%;height:auto;max-width:1100px;min-width:0;min-height:160px;margin:0 auto;border:2px solid #b9c6d3;border-radius:4px;box-sizing:border-box;object-fit:contain;object-position:center;background:#fff}
 
-.lang-switch{position:absolute;left:18px;top:18px;z-index:20;display:flex;gap:4px;padding:4px;background:rgba(3,29,67,.9);border:1px solid #e6a426;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+body[data-lang="en"] .card-gallery{background:#fff!important}body[data-lang="en"] .card-gallery .card-face,body[data-lang="en"] .en-overlay,body[data-lang="en"] .ru-overlay{display:none!important}.lang-switch{position:absolute;left:18px;top:18px;z-index:20;display:flex;gap:4px;padding:4px;background:rgba(3,29,67,.9);border:1px solid #e6a426;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.22)}
 .lang-switch button{border:0;background:transparent;color:#fff;font-weight:800;font-size:12px;line-height:1;padding:7px 8px;border-radius:7px;cursor:pointer}
 .lang-switch button:hover{background:rgba(255,255,255,.18)}
 
