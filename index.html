@@ -110,7 +110,7 @@ function setLang(lang){
  hero.src=d.img||"mirabaad-uz.webp";
  const gallery=document.querySelector(".card-gallery");
  gallery.style.cssText="width:100%!important;min-height:0!important;padding:0!important;margin:0!important;display:block!important;background:#fff!important;overflow:hidden!important";
- hero.style.cssText="display:block!important;width:100%!important;height:auto!important;max-width:none!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-sizing:border-box!important;object-fit:fill!important;object-position:center!important;background:#fff!important";
+ hero.style.cssText="display:block!important;width:100%!important;height:auto!important;max-width:none!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-sizing:border-box!important;object-fit:fill!important;object-position:center!important;background:#fff!important"; if(lang==="ru"){hero.style.transform="scaleX(1.02)";hero.style.transformOrigin="center center"}else{hero.style.transform="none"}
  const ro=document.getElementById("ruOverlay"); if(ro) ro.style.display=lang==="ru"?"block":"none"; const eo=document.getElementById("enOverlay"); if(eo) eo.style.display=lang==="en"?"block":"none";
  document.querySelectorAll("[data-i18n]").forEach(el=>{if(d[el.dataset.i18n])el.textContent=d[el.dataset.i18n]});
  document.querySelectorAll(".lang-switch button").forEach(b=>{const active=b.dataset.lang===lang;b.style.background=active?"#e6a426":"transparent";b.style.color=active?"#031d43":"#fff"});
