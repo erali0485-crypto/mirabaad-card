@@ -106,8 +106,8 @@ function setLang(lang){
  document.documentElement.lang=lang;
  document.body.dataset.lang=lang;
  const hero=document.getElementById("heroCard");
- hero.onerror=()=>{hero.onerror=null;hero.src="mirabaad-uz.webp";const ro=document.getElementById("ruOverlay");if(ro)ro.style.display="none"};
- hero.src=d.img||"mirabaad-uz.webp";
+ hero.onerror=null;
+ hero.src=(d.img||"mirabaad-uz.webp")+(String(d.img||"").startsWith("data:")?"":("?v="+lang+"-20261007"));
  const gallery=document.querySelector(".card-gallery");
  gallery.style.cssText="width:100%!important;min-height:0!important;padding:0!important;margin:0!important;display:block!important;background:#fff!important;overflow:hidden!important";
  hero.style.cssText="display:block!important;width:100%!important;height:auto!important;max-width:none!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-sizing:border-box!important;object-fit:fill!important;object-position:center!important;background:#fff!important"; hero.style.transform="none"
