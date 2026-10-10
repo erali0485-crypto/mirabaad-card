@@ -72,13 +72,19 @@ body[data-lang="en"] .card-gallery,body[data-lang="uz"] .card-gallery,body[data-
 .maps{background:#effff3;color:#176b3b}
 @media(max-width:900px){.contact{padding:32px 20px}.contact-grid{grid-template-columns:1fr}.qr-frame{width:min(76vw,300px);height:min(76vw,300px)}}
 @media(max-width:650px){.card-gallery{padding:6px 6px 8px}.card-face{width:100%;max-width:100%;border-width:1px}.lang-switch{left:8px;top:8px;gap:2px;padding:3px}.lang-switch button{font-size:10px;padding:6px 7px}.contact{padding:27px 12px 22px}.heading{font-size:25px;margin-left:18px}.subheading{font-size:14px;margin-left:18px;margin-bottom:20px}.qr-frame{width:min(78vw,300px);height:min(78vw,300px);padding:10px}.actions{grid-template-columns:1fr;gap:10px}.action{min-height:74px;padding:9px 12px}.icon{width:48px;height:48px;min-width:48px}.icon svg{width:29px;height:29px}.action strong{font-size:16px}.action span{font-size:11px}}
+
+/* RU logo correction: add ООО above MIRABAAD without changing other languages */
+.ru-logo-fix{position:absolute;left:65%;top:0;width:33%;height:17%;background:#fff;z-index:6;pointer-events:none}
+.ru-logo-fix .ru-ooo{position:absolute;left:34%;top:1%;width:45%;margin:0;text-align:center;color:#111d5d;font-family:Arial,Helvetica,sans-serif;font-size:min(4vw,43px);font-weight:800;line-height:1}
+.ru-logo-fix .ru-brand{position:absolute;left:8%;top:7%;width:90%;margin:0;text-align:center;color:#111d5d;font-family:Arial,Helvetica,sans-serif;font-size:min(4vw,43px);font-weight:800;line-height:1}
+@media(max-width:650px){.ru-logo-fix{top:0;height:17%}.ru-logo-fix .ru-ooo{font-size:4vw}.ru-logo-fix .ru-brand{font-size:4vw}}
 </style>
 </head>
 <body>
 <main class="page">
 <section class="hero" aria-label="MIRABAAD">
 <div class="lang-switch" aria-label="Til tanlash"><button type="button" data-lang="uz" onclick="setLang('uz')">O‘Z</button><button type="button" data-lang="ru" onclick="setLang('ru')">RU</button><button type="button" data-lang="en" onclick="setLang('en')">EN</button></div>
-<div class="card-gallery"><img id="heroCard" class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — elektron vizitka"><div id="enOverlay" class="en-overlay" aria-hidden="true"><div class="en-logo-fix"></div><p class="en-logo-name">MIRABAAD</p><p class="en-logo-llc">LLC</p><div class="en-logo-line"></div><div class="en-logo-line2"></div><div class="en-name-bg"></div><p class="en-name">Khujaniyazov</p><p class="en-name n2">Nusratjon</p><div class="en-bar"></div><div class="en-role-bg"></div><p class="en-role">Founder &amp; Chief Executive Officer</p><div class="en-location-bg"></div><p class="en-location">Uzbekistan, Tashkent Region<br>Yangiyol District</p><div class="en-services-bg"></div><p class="en-man">Manufacturing</p><p class="en-part">Partnership</p></div>
+<div class="card-gallery"><img id="heroCard" class="card-face" src="mirabaad-uz.webp" alt="MIRABAAD — elektron vizitka"><div id="ruLogoFix" class="ru-logo-fix" aria-hidden="true" style="display:none"><p class="ru-ooo">ООО</p><p class="ru-brand">MIRABAAD</p></div><div id="enOverlay" class="en-overlay" aria-hidden="true"><div class="en-logo-fix"></div><p class="en-logo-name">MIRABAAD</p><p class="en-logo-llc">LLC</p><div class="en-logo-line"></div><div class="en-logo-line2"></div><div class="en-name-bg"></div><p class="en-name">Khujaniyazov</p><p class="en-name n2">Nusratjon</p><div class="en-bar"></div><div class="en-role-bg"></div><p class="en-role">Founder &amp; Chief Executive Officer</p><div class="en-location-bg"></div><p class="en-location">Uzbekistan, Tashkent Region<br>Yangiyol District</p><div class="en-services-bg"></div><p class="en-man">Manufacturing</p><p class="en-part">Partnership</p></div>
 </section>
 
 <section class="contact">
@@ -111,7 +117,7 @@ function setLang(lang){
  const gallery=document.querySelector(".card-gallery");
  gallery.style.cssText="width:100%!important;min-height:0!important;padding:0!important;margin:0!important;display:block!important;background:#fff!important;overflow:hidden!important";
  hero.style.cssText="display:block!important;width:100%!important;height:auto!important;max-width:none!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-sizing:border-box!important;object-fit:fill!important;object-position:center!important;background:#fff!important"; hero.style.transform="none"
- const ro=document.getElementById("ruOverlay"); if(ro) ro.style.display=lang==="ru"?"block":"none"; const eo=document.getElementById("enOverlay"); if(eo) eo.style.display=lang==="en"?"block":"none";
+ const ro=document.getElementById("ruOverlay"); if(ro) ro.style.display=lang==="ru"?"block":"none"; const rlf=document.getElementById("ruLogoFix"); if(rlf) rlf.style.display=lang==="ru"?"block":"none"; const eo=document.getElementById("enOverlay"); if(eo) eo.style.display=lang==="en"?"block":"none";
  document.querySelectorAll("[data-i18n]").forEach(el=>{if(d[el.dataset.i18n])el.textContent=d[el.dataset.i18n]});
  document.querySelectorAll(".lang-switch button").forEach(b=>{const active=b.dataset.lang===lang;b.style.background=active?"#e6a426":"transparent";b.style.color=active?"#031d43":"#fff"});
  localStorage.setItem("mirabaad-lang",lang);
