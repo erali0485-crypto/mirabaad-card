@@ -106,7 +106,7 @@ body[data-lang="en"] .card-gallery,body[data-lang="uz"] .card-gallery,body[data-
 <script>
 const LANGS={
 uz:{img:"mirabaad-uz.webp",contactTitle:"BIZ BILAN ALOQA",contactSub:"QR kodni skaner qiling",qrNote:"QR-kod shu elektron vizitkani ochadi",call:"Qo‘ng‘iroq",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Manzilni ochish"},
-ru:{img:"file_000000004778820ab3a9c1386c319390.png",contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
+ru:{img:"IMG_20261012_095255_840.jpg",contactTitle:"СВЯЖИТЕСЬ С НАМИ",contactSub:"Отсканируйте QR-код",qrNote:"QR-код открывает эту электронную визитку",call:"Позвонить",email:"Электронная почта",telegram:"Телеграм",instagram:"Инстаграм",maps:"Google Карты",openAddress:"Открыть адрес"},
 en:{img:"mirabaad-en-card.webp",contactTitle:"CONNECT WITH US",contactSub:"Scan the QR code",qrNote:"The QR code opens this electronic business card",call:"Call",email:"Email",telegram:"Telegram",instagram:"Instagram",maps:"Google Maps",openAddress:"Open address"}};
 function setLang(lang){
  const d=LANGS[lang]||LANGS.uz;
@@ -114,7 +114,7 @@ function setLang(lang){
  document.body.dataset.lang=lang;
  const hero=document.getElementById("heroCard");
  hero.onerror=null;
- const imageCandidates=lang==="en"?["file_000000004778820ab3a9c1386c319390.png","mirabaad-en-final.jpg","mirabaad-en-card.webp","mirabaad-en.webp","mirabaad-en-fixed.jpg"]:lang==="ru"?["file_000000004778820ab3a9c1386c319390.png","mirabaad-ru-exact.jpg","mirabaad-ru-exact.webp","mirabaad-ru-20261006.webp"]:["mirabaad-uz.webp"];
+ const imageCandidates=lang==="en"?["file_000000004778820ab3a9c1386c319390.png","mirabaad-en-final.jpg","mirabaad-en-card.webp","mirabaad-en.webp","mirabaad-en-fixed.jpg"]:lang==="ru"?["IMG_20261012_095255_840.jpg","mirabaad-ru-exact.jpg","mirabaad-ru-exact.webp","mirabaad-ru-20261006.webp"]:["mirabaad-uz.webp"];
  let imageIndex=0;
  hero.onerror=function(){
    imageIndex++;
